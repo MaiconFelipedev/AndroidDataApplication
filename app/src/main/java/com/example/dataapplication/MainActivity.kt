@@ -91,32 +91,7 @@ fun DiaDaSemana(modifier: Modifier = Modifier){
 
         )
     }
-
-    /* Column {
-        Text(
-            text = "Maicon Felipe da Silva Souza",
-            modifier = modifier
-        )
-        Column {
-            Text(
-                text = "Dia: $hoje, Data: $dataHoje",
-                modifier = modifier,
-                color = Color.White
-            )
-            Spacer(modifier = Modifier.width(10.dp))
-            Text(
-                text = "Dia da semana para $data1: ${Calendario().diaDaSemanaAlternativo(24, 3, 2024)}",
-                modifier = modifier,
-                color = Color.White
-            )
-        }
-    }
-    */
-
-    }
-
-
-
+}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
