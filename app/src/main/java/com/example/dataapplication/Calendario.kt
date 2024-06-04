@@ -1,5 +1,6 @@
 package com.example.dataapplication;
 
+import java.text.SimpleDateFormat
 import java.util.*;
 class Calendario {
     private var data: Calendar = Calendar.getInstance();
@@ -19,6 +20,11 @@ class Calendario {
         val mes = data.get(Calendar.MONTH) + 1 // Mês começa do zero no Calendar
         val ano = data.get(Calendar.YEAR)
         return String.format("%02d/%02d/%d", dia, mes, ano)
+    }
+
+    fun formatoHoras(time: Date): String {
+        val dateFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault())
+        return dateFormat.format(time)
     }
 
 }
